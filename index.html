@@ -365,5 +365,37 @@
     </section>
 
   </div>
+
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script>
+    // Initialise Lenis for global buttery smooth scroll
+    const lenis = new Lenis({
+      duration: 1.4,
+      easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // expo out
+      smoothWheel: true,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+
+    // Intercept all on-page anchor clicks and hand off to Lenis
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const id = this.getAttribute('href');
+        if (id === '#') return;
+        const target = document.querySelector(id);
+        if (!target) return;
+        e.preventDefault();
+        lenis.scrollTo(target, {
+          offset: -80,   // clear the nav
+          duration: 1.4,
+          easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        });
+      });
+    });
+  </script>
 </body>
 </html>
