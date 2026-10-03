@@ -192,7 +192,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero-cta-row { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
 .hero-meta {
   margin-top: 28px;
-  font: 500 13px/1 'Apercu';
+  font: 500 13px/1.5 'Apercu';
   color: hsl(var(--text-muted));
   letter-spacing: 0.02em;
 }
@@ -733,7 +733,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .fc-meta {
   margin-top: 18px;
-  font: 500 13px/1 'Apercu';
+  font: 500 13px/1.5 'Apercu';
   color: hsl(var(--text-muted));
 }
 
