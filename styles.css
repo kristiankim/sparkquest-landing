@@ -92,7 +92,15 @@ ul { margin: 0; padding: 0; list-style: none; }
   --brand-dark-h: var(--brand-dark);
   --brand-light-h: var(--brand-light);
   background: hsl(var(--bg-secondary));
-  overflow: hidden;
+  overflow-x: clip;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
 }
 
 /* ───── Top nav ───── */
@@ -189,10 +197,54 @@ ul { margin: 0; padding: 0; list-style: none; }
   letter-spacing: 0.02em;
 }
 .hero-art {
-  position: relative; min-height: 720px;
+  position: relative;
   display: flex; align-items: center; justify-content: center;
+  padding: 24px 0;
 }
-.hero-phone-wrap { position: relative; }
+.hero-phone-wrap { position: relative; width: min(320px, 100%); }
+.chip-hero {
+  top: 31%; right: -36px;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* ───── Screen slots ─────
+   Fixed-ratio frames that hold product screens. Today each frame holds an
+   HTML mockup scaled to fit its width. To use real captures, replace the
+   mockup with <img> or <video> (it fills the frame, cropped to cover) and
+   set --screen-w / --screen-h to the capture's pixel size. */
+.screen {
+  --screen-w: 320; --screen-h: 660;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  aspect-ratio: var(--screen-w) / var(--screen-h);
+  container-type: inline-size;
+}
+.screen--phone {
+  border-radius: 44px;
+  box-shadow: 0 32px 80px -24px rgba(45, 30, 100, 0.28);
+}
+.screen--desktop {
+  --screen-w: 880; --screen-h: 440;
+  border-radius: 18px;
+  box-shadow: 0 40px 80px -28px rgba(20, 18, 60, 0.28);
+}
+.screen > img,
+.screen > video {
+  display: block;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.screen > .phone-mock,
+.screen > .desktop-mock {
+  position: absolute; top: 0; left: 0;
+  width: calc(var(--screen-w) * 1px);
+  height: calc(var(--screen-h) * 1px);
+  transform-origin: 0 0;
+  /* unitless frame-width / mock-width ratio */
+  transform: scale(tan(atan2(100cqw, calc(var(--screen-w) * 1px))));
+}
 
 /* ───── Phone mock ───── */
 .phone-mock {
@@ -200,8 +252,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   background: hsl(var(--bg));
   border-radius: 44px;
   border: 1px solid hsl(var(--card-border));
-  box-shadow: 0 32px 80px -24px rgba(45, 30, 100, 0.28),
-              0 0 0 6px hsl(var(--bg)) inset;
+  box-shadow: 0 0 0 6px hsl(var(--bg)) inset;
   position: relative; overflow: hidden;
   transform-origin: center;
 }
@@ -214,6 +265,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .phone-inner {
   padding: 56px 18px 20px;
   display: grid; gap: 14px;
+  align-content: start;
   height: 100%; position: relative;
 }
 .phone-top { display: flex; align-items: center; gap: 10px; }
@@ -317,21 +369,12 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-variant-numeric: tabular-nums;
 }
 .phone-tasks .t.done .pt { color: hsl(var(--success)); background: white; }
-.phone-float {
-  position: absolute; top: 200px; right: 22px;
-  background: hsl(var(--success)); color: white;
-  padding: 6px 12px; border-radius: 9999px;
-  font: 700 13px/1 'Apercu';
-  box-shadow: 0 6px 16px -4px hsl(var(--success) / 0.4);
-  animation: float 3s ease-in-out infinite;
-}
 
 /* ───── Desktop mock ───── */
 .desktop-mock {
   width: 880px; height: 580px;
   background: hsl(var(--bg));
   border-radius: 18px; overflow: hidden;
-  box-shadow: 0 40px 80px -28px rgba(20, 18, 60, 0.28);
   border: 1px solid hsl(var(--card-border));
   display: grid; grid-template-rows: 36px 1fr;
   transform-origin: center;
@@ -520,12 +563,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* ───── For kids / parents ───── */
 .for-grid { display: grid; grid-template-columns: 1fr 1.1fr; gap: 80px; align-items: center; }
-.for-grid.reverse { grid-template-columns: 1.1fr 1fr; }
 .for-art {
-  position: relative; min-height: 600px;
+  position: relative;
   display: flex; align-items: center; justify-content: center;
 }
-.for-art.big { min-height: 540px; }
 .ticks { display: grid; gap: 16px; margin: 28px 0 0; }
 .ticks li {
   position: relative; padding-left: 32px;
@@ -547,12 +588,12 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* Kid art stack */
 .kids-phone-stack {
   position: relative;
-  width: 420px; height: 600px;
-  display: flex; align-items: center; justify-content: center;
+  width: 100%; max-width: 440px;
+  aspect-ratio: 440 / 640;
 }
 .kp { position: absolute; }
-.kp.back { transform: translate(-90px, 30px) rotate(-8deg); opacity: 0.8; }
-.kp.front { transform: translate(40px, -10px) rotate(4deg); }
+.kp.back { width: 62%; left: 0; top: 8%; transform: rotate(-8deg); opacity: 0.8; }
+.kp.front { width: 69%; right: 0; top: 0; transform: rotate(4deg); }
 
 .float-chip {
   position: absolute;
@@ -564,20 +605,35 @@ ul { margin: 0; padding: 0; list-style: none; }
   color: hsl(var(--text));
   border: 1px solid hsl(var(--card-border));
 }
+.chip-earned,
 .chip-k1 {
-  top: 40px; right: -10px;
   color: hsl(var(--success));
   background: hsl(var(--success-light));
   border-color: hsl(var(--success) / 0.2);
+}
+.chip-k1 {
+  top: 2%; left: 4%;
   animation: float 3.6s ease-in-out infinite;
 }
 .chip-k2 {
-  bottom: 80px; left: -30px;
+  bottom: 12%; left: -4%;
   animation: float 4.2s ease-in-out infinite -1s;
 }
 
-/* Parents desktop wrap */
-.parents-desk-wrap { position: relative; }
+/* Parents: heading row, full-width dashboard, four points beneath */
+.parents-head {
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 28px 48px; flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+.parents-head .h2 { max-width: 640px; }
+.parents-art { max-width: 960px; margin: 0 auto; }
+.ticks--row {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 72px;
+}
+.ticks--row li b { display: block; margin-bottom: 4px; }
 
 /* ───── Pricing ───── */
 .price-grid {
@@ -673,7 +729,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 
 .footer {
-  max-width: 1200px; margin: 80px auto 0;
+  max-width: 1088px; margin: 80px auto 0;
   padding: 32px 0;
   border-top: 1px solid hsl(var(--card-border));
   display: flex; align-items: center; justify-content: space-between;
@@ -704,22 +760,27 @@ ul { margin: 0; padding: 0; list-style: none; }
   }
   .hero-h1 { font-size: 56px; }
   .hero-sub { font-size: 17px; }
-  .hero-art { min-height: 560px; }
+  .hero { padding-bottom: 80px; }
+  .hero-phone-wrap { width: min(280px, 100%); }
+  .chip-hero { right: -12px; }
   .section { padding: 80px 24px; }
   .h2 { font-size: 40px; }
   .how-grid { grid-template-columns: 1fr; gap: 16px; }
-  .for-grid, .for-grid.reverse { grid-template-columns: 1fr; gap: 48px; }
-  .for-grid.reverse > .for-copy { order: 2; }
-  .for-grid.reverse > .for-art { order: 1; }
-  .for-art, .for-art.big { min-height: 480px; }
-  .kids-phone-stack { width: 320px; height: 500px; }
-  .desktop-mock { width: 100%; max-width: 720px; height: auto; }
+  .for-grid { grid-template-columns: 1fr; gap: 48px; }
+  .for-grid > .for-copy { order: -1; }
+  .kids-phone-stack { max-width: 380px; }
+  .parents-head { margin-bottom: 40px; }
+  .ticks--row { grid-template-columns: 1fr 1fr; gap: 24px 32px; margin-top: 48px; }
   .price-grid { grid-template-columns: 1fr; }
   .pc-price { font-size: 44px; }
   .h1-soft { font-size: 44px; }
   .footer-cta { padding: 80px 24px 0; }
   .fc-form { flex-direction: column; }
-  .footer { padding: 24px; flex-direction: column; align-items: flex-start; }
+  .footer { padding: 24px 0; flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 600px) {
+  .ticks--row { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

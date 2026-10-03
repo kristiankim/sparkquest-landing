@@ -69,44 +69,45 @@
           <div class="hero-meta">No ads · No streaks · Cancel anytime</div>
         </div>
 
-        <div class="hero-art">
+        <div class="hero-art" aria-hidden="true">
           <div class="hero-phone-wrap">
-            <!-- Phone mock -->
-            <div class="phone-mock">
-              <div class="notch"></div>
-              <div class="phone-inner">
-                <div class="phone-top">
-                  <div class="phone-avatar">M</div>
-                  <div>
-                    <div class="phone-name">Hi, Maya</div>
-                    <div class="phone-date">Tuesday, Apr 30</div>
+            <!-- Screen slot: replace the mockup with <img> or <video> of the real app -->
+            <figure class="screen screen--phone">
+              <div class="phone-mock">
+                <div class="notch"></div>
+                <div class="phone-inner">
+                  <div class="phone-top">
+                    <div class="phone-avatar">M</div>
+                    <div>
+                      <div class="phone-name">Hi, Maya</div>
+                      <div class="phone-date">Tuesday, Apr 30</div>
+                    </div>
+                    <div class="phone-balance">120<small>pts</small></div>
                   </div>
-                  <div class="phone-balance">120<small>pts</small></div>
-                </div>
 
-                <div class="phone-greet">Today's tasks</div>
+                  <div class="phone-greet">Today's tasks</div>
 
-                <div class="phone-progress">
-                  <div class="row">
-                    <span class="l">Today's progress</span>
-                    <span class="v">3 / 5</span>
+                  <div class="phone-progress">
+                    <div class="row">
+                      <span class="l">Today's progress</span>
+                      <span class="v">3 / 5</span>
+                    </div>
+                    <div class="bar"><span></span></div>
                   </div>
-                  <div class="bar"><span></span></div>
+
+                  <div class="phone-eyebrow">After school</div>
+
+                  <div class="phone-tasks">
+                    <div class="t done"><span class="cb">✓</span><span class="nm">Make bed</span><span class="pt">+3</span></div>
+                    <div class="t done"><span class="cb">✓</span><span class="nm">Brush teeth</span><span class="pt">+5</span></div>
+                    <div class="t done"><span class="cb">✓</span><span class="nm">Pack school bag</span><span class="pt">+5</span></div>
+                    <div class="t"><span class="cb"></span><span class="nm">Read for 20 min</span><span class="pt">+10</span></div>
+                    <div class="t"><span class="cb"></span><span class="nm">Help with dishes</span><span class="pt">+5</span></div>
+                  </div>
                 </div>
-
-                <div class="phone-eyebrow">After school</div>
-
-                <div class="phone-tasks">
-                  <div class="t done"><span class="cb">✓</span><span class="nm">Make bed</span><span class="pt">+3</span></div>
-                  <div class="t done"><span class="cb">✓</span><span class="nm">Brush teeth</span><span class="pt">+5</span></div>
-                  <div class="t done"><span class="cb">✓</span><span class="nm">Pack school bag</span><span class="pt">+5</span></div>
-                  <div class="t"><span class="cb"></span><span class="nm">Read for 20 min</span><span class="pt">+10</span></div>
-                  <div class="t"><span class="cb"></span><span class="nm">Help with dishes</span><span class="pt">+5</span></div>
-                </div>
-
-                <div class="phone-float">+5 pts ✨</div>
               </div>
-            </div>
+            </figure>
+            <div class="float-chip chip-earned chip-hero">+5 pts ✨</div>
           </div>
         </div>
       </div>
@@ -140,62 +141,66 @@
     <!-- ───── For kids ───── -->
     <section id="kids" class="section for-kids">
       <div class="for-grid">
-        <div class="for-art">
+        <div class="for-art" aria-hidden="true">
           <div class="kids-phone-stack">
             <div class="kp back">
-              <div class="phone-mock" style="transform: scale(0.85)">
-                <div class="notch"></div>
-                <div class="phone-inner">
-                  <div class="phone-top">
-                    <div class="phone-avatar">A</div>
-                    <div>
-                      <div class="phone-name">Hi, Arlo</div>
-                      <div class="phone-date">Tuesday, Apr 30</div>
+              <figure class="screen screen--phone">
+                <div class="phone-mock">
+                  <div class="notch"></div>
+                  <div class="phone-inner">
+                    <div class="phone-top">
+                      <div class="phone-avatar">A</div>
+                      <div>
+                        <div class="phone-name">Hi, Arlo</div>
+                        <div class="phone-date">Tuesday, Apr 30</div>
+                      </div>
+                      <div class="phone-balance">82<small>pts</small></div>
                     </div>
-                    <div class="phone-balance">82<small>pts</small></div>
-                  </div>
-                  <div class="phone-greet">Today's tasks</div>
-                  <div class="phone-progress">
-                    <div class="row"><span class="l">Today's progress</span><span class="v">2 / 4</span></div>
-                    <div class="bar"><span style="width:50%"></span></div>
-                  </div>
-                  <div class="phone-eyebrow">Morning</div>
-                  <div class="phone-tasks">
-                    <div class="t done"><span class="cb">✓</span><span class="nm">Brush teeth</span><span class="pt">+5</span></div>
-                    <div class="t done"><span class="cb">✓</span><span class="nm">Make bed</span><span class="pt">+3</span></div>
-                    <div class="t"><span class="cb"></span><span class="nm">Read 20 min</span><span class="pt">+10</span></div>
-                    <div class="t"><span class="cb"></span><span class="nm">Pack bag</span><span class="pt">+5</span></div>
+                    <div class="phone-greet">Today's tasks</div>
+                    <div class="phone-progress">
+                      <div class="row"><span class="l">Today's progress</span><span class="v">2 / 4</span></div>
+                      <div class="bar"><span style="width:50%"></span></div>
+                    </div>
+                    <div class="phone-eyebrow">Morning</div>
+                    <div class="phone-tasks">
+                      <div class="t done"><span class="cb">✓</span><span class="nm">Brush teeth</span><span class="pt">+5</span></div>
+                      <div class="t done"><span class="cb">✓</span><span class="nm">Make bed</span><span class="pt">+3</span></div>
+                      <div class="t"><span class="cb"></span><span class="nm">Read 20 min</span><span class="pt">+10</span></div>
+                      <div class="t"><span class="cb"></span><span class="nm">Pack bag</span><span class="pt">+5</span></div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </figure>
             </div>
             <div class="kp front">
-              <div class="phone-mock" style="transform: scale(0.95)">
-                <div class="notch"></div>
-                <div class="phone-inner">
-                  <div class="phone-top">
-                    <div class="phone-avatar">M</div>
-                    <div>
-                      <div class="phone-name">Hi, Maya</div>
-                      <div class="phone-date">Tuesday, Apr 30</div>
+              <figure class="screen screen--phone">
+                <div class="phone-mock">
+                  <div class="notch"></div>
+                  <div class="phone-inner">
+                    <div class="phone-top">
+                      <div class="phone-avatar">M</div>
+                      <div>
+                        <div class="phone-name">Hi, Maya</div>
+                        <div class="phone-date">Tuesday, Apr 30</div>
+                      </div>
+                      <div class="phone-balance">120<small>pts</small></div>
                     </div>
-                    <div class="phone-balance">120<small>pts</small></div>
-                  </div>
-                  <div class="phone-greet">Today's tasks</div>
-                  <div class="phone-progress">
-                    <div class="row"><span class="l">Today's progress</span><span class="v">3 / 5</span></div>
-                    <div class="bar"><span></span></div>
-                  </div>
-                  <div class="phone-eyebrow">After school</div>
-                  <div class="phone-tasks">
-                    <div class="t done"><span class="cb">✓</span><span class="nm">Make bed</span><span class="pt">+3</span></div>
-                    <div class="t done"><span class="cb">✓</span><span class="nm">Brush teeth</span><span class="pt">+5</span></div>
-                    <div class="t done"><span class="cb">✓</span><span class="nm">Pack school bag</span><span class="pt">+5</span></div>
-                    <div class="t"><span class="cb"></span><span class="nm">Read for 20 min</span><span class="pt">+10</span></div>
-                    <div class="t"><span class="cb"></span><span class="nm">Help with dishes</span><span class="pt">+5</span></div>
+                    <div class="phone-greet">Today's tasks</div>
+                    <div class="phone-progress">
+                      <div class="row"><span class="l">Today's progress</span><span class="v">3 / 5</span></div>
+                      <div class="bar"><span></span></div>
+                    </div>
+                    <div class="phone-eyebrow">After school</div>
+                    <div class="phone-tasks">
+                      <div class="t done"><span class="cb">✓</span><span class="nm">Make bed</span><span class="pt">+3</span></div>
+                      <div class="t done"><span class="cb">✓</span><span class="nm">Brush teeth</span><span class="pt">+5</span></div>
+                      <div class="t done"><span class="cb">✓</span><span class="nm">Pack school bag</span><span class="pt">+5</span></div>
+                      <div class="t"><span class="cb"></span><span class="nm">Read for 20 min</span><span class="pt">+10</span></div>
+                      <div class="t"><span class="cb"></span><span class="nm">Help with dishes</span><span class="pt">+5</span></div>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </figure>
             </div>
             <div class="float-chip chip-k1">+10 pts ✨</div>
             <div class="float-chip chip-k2">All done for today!</div>
@@ -216,88 +221,88 @@
 
     <!-- ───── For parents ───── -->
     <section id="parents" class="section for-parents">
-      <div class="for-grid reverse">
-        <div class="for-copy">
+      <div class="parents-head">
+        <div>
           <div class="eyebrow">For parents</div>
           <h2 class="h2">All the controls. None of the noise.</h2>
-          <ul class="ticks">
-            <li><b>Set tasks per child.</b> Different routines for different ages — and shared ones for siblings.</li>
-            <li><b>You design the rewards.</b> Movie night, screen time, a trip to the bookshop. Your prices, your menu.</li>
-            <li><b>Weekly view, no nagging.</b> See what stuck, what didn't, and adjust without a fuss.</li>
-            <li><b>PIN-gated dashboard.</b> Kids can't change their own point values. Obviously.</li>
-          </ul>
-          <div class="hero-cta-row" style="margin-top: 28px">
-            <a href="https://sparkquest.netlify.app/auth/signup" class="btn btn-primary">Start free</a>
-            <a href="#pricing" class="btn btn-ghost">See pricing →</a>
-          </div>
         </div>
-        <div class="for-art big">
-          <div class="parents-desk-wrap">
-            <!-- Desktop mock -->
-            <div class="desktop-mock">
-              <div class="dt-bar"><span></span><span></span><span></span></div>
-              <div class="dt-body">
-                <aside class="dt-side">
-                  <div class="dt-brand">
-                    <svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true">
-                      <rect width="64" height="64" rx="18" fill="hsl(250 75% 55%)" />
-                      <path d="M32 16 L35.5 25 L45 25.7 L37.7 31.5 L40 41 L32 36 L24 41 L26.3 31.5 L19 25.7 L28.5 25 Z" fill="white" />
-                    </svg>
-                    <span>Sparkquest</span>
-                  </div>
-                  <div class="dt-nav">
-                    <div class="active">Kids</div>
-                    <div>Tasks</div>
-                    <div>Rewards</div>
-                    <div>Reports</div>
-                  </div>
-                </aside>
-                <main class="dt-main">
-                  <div class="dt-header">
-                    <div>
-                      <div class="dt-h1">Parent dashboard</div>
-                      <div class="dt-sub">Manage kids, tasks, and rewards.</div>
-                    </div>
-                    <button class="dt-cta">Start new week</button>
-                  </div>
-
-                  <div class="dt-stats">
-                    <div class="dt-stat"><div class="l">Active kids</div><div class="v">3</div></div>
-                    <div class="dt-stat"><div class="l">Tasks today</div><div class="v">12</div></div>
-                    <div class="dt-stat"><div class="l">Pts earned (wk)</div><div class="v">214</div></div>
-                    <div class="dt-stat"><div class="l">Pending</div><div class="v">2</div></div>
-                  </div>
-
-                  <div class="dt-grid">
-                    <div class="dt-panel">
-                      <div class="dt-pt">Your kids</div>
-                      <div class="dt-row active">
-                        <span class="av">M</span>
-                        <div><div class="nm">Maya</div><div class="ms">120 pts · 5 tasks</div></div>
-                      </div>
-                      <div class="dt-row">
-                        <span class="av g">A</span>
-                        <div><div class="nm">Arlo</div><div class="ms">82 pts · 4 tasks</div></div>
-                      </div>
-                      <div class="dt-row">
-                        <span class="av y">J</span>
-                        <div><div class="nm">Juno</div><div class="ms">45 pts · 3 tasks</div></div>
-                      </div>
-                    </div>
-                    <div class="dt-panel">
-                      <div class="dt-pt">Maya's tasks</div>
-                      <div class="dt-task"><span class="ic">☀</span><span class="nm">Brush teeth</span><span class="pt">+5</span></div>
-                      <div class="dt-task"><span class="ic">✦</span><span class="nm">Make bed</span><span class="pt">+3</span></div>
-                      <div class="dt-task"><span class="ic">📖</span><span class="nm">Read for 20 min</span><span class="pt">+10</span></div>
-                      <div class="dt-task"><span class="ic">🍽</span><span class="nm">Help with dishes</span><span class="pt">+5</span></div>
-                    </div>
-                  </div>
-                </main>
-              </div>
-            </div>
-          </div>
+        <div class="hero-cta-row">
+          <a href="https://sparkquest.netlify.app/auth/signup" class="btn btn-primary">Start free</a>
+          <a href="#pricing" class="btn btn-ghost">See pricing →</a>
         </div>
       </div>
+      <div class="parents-art" aria-hidden="true">
+        <!-- Screen slot: replace the mockup with <img> or <video> of the real dashboard -->
+        <figure class="screen screen--desktop">
+              <div class="desktop-mock">
+                <div class="dt-bar"><span></span><span></span><span></span></div>
+                <div class="dt-body">
+                  <aside class="dt-side">
+                    <div class="dt-brand">
+                      <svg width="22" height="22" viewBox="0 0 64 64" aria-hidden="true">
+                        <rect width="64" height="64" rx="18" fill="hsl(250 75% 55%)" />
+                        <path d="M32 16 L35.5 25 L45 25.7 L37.7 31.5 L40 41 L32 36 L24 41 L26.3 31.5 L19 25.7 L28.5 25 Z" fill="white" />
+                      </svg>
+                      <span>Sparkquest</span>
+                    </div>
+                    <div class="dt-nav">
+                      <div class="active">Kids</div>
+                      <div>Tasks</div>
+                      <div>Rewards</div>
+                      <div>Reports</div>
+                    </div>
+                  </aside>
+                  <div class="dt-main">
+                    <div class="dt-header">
+                      <div>
+                        <div class="dt-h1">Parent dashboard</div>
+                        <div class="dt-sub">Manage kids, tasks, and rewards.</div>
+                      </div>
+                      <span class="dt-cta">Start new week</span>
+                    </div>
+
+                    <div class="dt-stats">
+                      <div class="dt-stat"><div class="l">Active kids</div><div class="v">3</div></div>
+                      <div class="dt-stat"><div class="l">Tasks today</div><div class="v">12</div></div>
+                      <div class="dt-stat"><div class="l">Pts earned (wk)</div><div class="v">214</div></div>
+                      <div class="dt-stat"><div class="l">Pending</div><div class="v">2</div></div>
+                    </div>
+
+                    <div class="dt-grid">
+                      <div class="dt-panel">
+                        <div class="dt-pt">Your kids</div>
+                        <div class="dt-row active">
+                          <span class="av">M</span>
+                          <div><div class="nm">Maya</div><div class="ms">120 pts · 5 tasks</div></div>
+                        </div>
+                        <div class="dt-row">
+                          <span class="av g">A</span>
+                          <div><div class="nm">Arlo</div><div class="ms">82 pts · 4 tasks</div></div>
+                        </div>
+                        <div class="dt-row">
+                          <span class="av y">J</span>
+                          <div><div class="nm">Juno</div><div class="ms">45 pts · 3 tasks</div></div>
+                        </div>
+                      </div>
+                      <div class="dt-panel">
+                        <div class="dt-pt">Maya's tasks</div>
+                        <div class="dt-task"><span class="ic">☀</span><span class="nm">Brush teeth</span><span class="pt">+5</span></div>
+                        <div class="dt-task"><span class="ic">✦</span><span class="nm">Make bed</span><span class="pt">+3</span></div>
+                        <div class="dt-task"><span class="ic">📖</span><span class="nm">Read for 20 min</span><span class="pt">+10</span></div>
+                        <div class="dt-task"><span class="ic">🍽</span><span class="nm">Help with dishes</span><span class="pt">+5</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </figure>
+      </div>
+      <ul class="ticks ticks--row">
+        <li><b>Set tasks per child.</b> Different routines for different ages — and shared ones for siblings.</li>
+        <li><b>You design the rewards.</b> Movie night, screen time, a trip to the bookshop. Your prices, your menu.</li>
+        <li><b>Weekly view, no nagging.</b> See what stuck, what didn't, and adjust without a fuss.</li>
+        <li><b>PIN-gated dashboard.</b> Kids can't change their own point values. Obviously.</li>
+      </ul>
     </section>
 
     <!-- ───── Pricing ───── -->
