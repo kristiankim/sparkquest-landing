@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-03T01:41:52Z",
+  "title": "Design System: Sparkquest",
+  "extensions": {
+    "colorMeta": {
+      "spark-indigo": {
+        "role": "primary",
+        "displayName": "Spark Indigo",
+        "canonical": "hsl(250 75% 55%)",
+        "hexApprox": "#5336e2",
+        "tonalRamp": [
+          "hsl(250 75% 15%)",
+          "hsl(250 75% 26%)",
+          "hsl(250 75% 37%)",
+          "hsl(250 75% 48%)",
+          "hsl(250 75% 59%)",
+          "hsl(250 75% 70%)",
+          "hsl(250 75% 82%)",
+          "hsl(250 75% 95%)"
+        ]
+      },
+      "spark-indigo-deep": {
+        "role": "primary",
+        "displayName": "Spark Indigo Deep",
+        "canonical": "hsl(250 75% 35%)",
+        "hexApprox": "#2d169c",
+        "tonalRamp": [
+          "hsl(250 75% 15%)",
+          "hsl(250 75% 26%)",
+          "hsl(250 75% 37%)",
+          "hsl(250 75% 48%)",
+          "hsl(250 75% 59%)",
+          "hsl(250 75% 70%)",
+          "hsl(250 75% 82%)",
+          "hsl(250 75% 95%)"
+        ]
+      },
+      "spark-indigo-mist": {
+        "role": "primary",
+        "displayName": "Spark Indigo Mist",
+        "canonical": "hsl(250 75% 95%)",
+        "hexApprox": "#ece9fc",
+        "tonalRamp": [
+          "hsl(250 75% 15%)",
+          "hsl(250 75% 26%)",
+          "hsl(250 75% 37%)",
+          "hsl(250 75% 48%)",
+          "hsl(250 75% 59%)",
+          "hsl(250 75% 70%)",
+          "hsl(250 75% 82%)",
+          "hsl(250 75% 95%)"
+        ]
+      },
+      "done-green": {
+        "role": "secondary",
+        "displayName": "Done Green",
+        "canonical": "hsl(156 100% 39%)",
+        "hexApprox": "#00c777",
+        "tonalRamp": [
+          "hsl(156 100% 15%)",
+          "hsl(var(--success))",
+          "hsl(156 100% 37%)",
+          "hsl(156 100% 48%)",
+          "hsl(156 100% 59%)",
+          "hsl(156 100% 70%)",
+          "hsl(156 100% 82%)",
+          "hsl(156 100% 95%)"
+        ]
+      },
+      "done-green-mist": {
+        "role": "secondary",
+        "displayName": "Done Green Mist",
+        "canonical": "hsl(156 100% 96%)",
+        "hexApprox": "#ebfff7",
+        "tonalRamp": [
+          "hsl(156 100% 15%)",
+          "hsl(var(--success))",
+          "hsl(156 100% 37%)",
+          "hsl(156 100% 48%)",
+          "hsl(156 100% 59%)",
+          "hsl(156 100% 70%)",
+          "hsl(156 100% 82%)",
+          "hsl(156 100% 95%)"
+        ]
+      },
+      "star-gold": {
+        "role": "tertiary",
+        "displayName": "Star Gold",
+        "canonical": "hsl(45 100% 50%)",
+        "hexApprox": "#ffbf00",
+        "tonalRamp": [
+          "hsl(45 100% 15%)",
+          "hsl(45 100% 26%)",
+          "hsl(45 100% 37%)",
+          "hsl(45 100% 48%)",
+          "hsl(45 100% 59%)",
+          "hsl(45 100% 70%)",
+          "hsl(45 100% 82%)",
+          "hsl(45 100% 95%)"
+        ]
+      },
+      "star-gold-ink": {
+        "role": "tertiary",
+        "displayName": "Star Gold Ink",
+        "canonical": "#5a4400",
+        "hexApprox": "#5a4400",
+        "tonalRamp": [
+          "hsl(45 100% 15%)",
+          "hsl(45 100% 26%)",
+          "hsl(45 100% 37%)",
+          "hsl(45 100% 48%)",
+          "hsl(45 100% 59%)",
+          "hsl(45 100% 70%)",
+          "hsl(45 100% 82%)",
+          "hsl(45 100% 95%)"
+        ]
+      },
+      "lavender-paper": {
+        "role": "neutral",
+        "displayName": "Lavender Paper",
+        "canonical": "hsl(250 20% 98%)",
+        "hexApprox": "#f9f9fb",
+        "tonalRamp": [
+          "hsl(250 20% 15%)",
+          "hsl(250 20% 26%)",
+          "hsl(250 20% 37%)",
+          "hsl(250 20% 48%)",
+          "hsl(250 20% 59%)",
+          "hsl(250 20% 70%)",
+          "hsl(250 20% 82%)",
+          "hsl(250 20% 95%)"
+        ]
+      },
+      "card-white": {
+        "role": "neutral",
+        "displayName": "Card White",
+        "canonical": "hsl(0 0% 100%)",
+        "hexApprox": "#ffffff",
+        "tonalRamp": [
+          "hsl(0 0% 15%)",
+          "hsl(0 0% 26%)",
+          "hsl(0 0% 37%)",
+          "hsl(0 0% 48%)",
+          "hsl(0 0% 59%)",
+          "hsl(0 0% 70%)",
+          "hsl(0 0% 82%)",
+          "hsl(0 0% 95%)"
+        ]
+      },
+      "slate-ink": {
+        "role": "neutral",
+        "displayName": "Slate Ink",
+        "canonical": "hsl(220 20% 15%)",
+        "hexApprox": "#1f242e",
+        "tonalRamp": [
+          "hsl(220 20% 15%)",
+          "hsl(220 20% 26%)",
+          "hsl(220 20% 37%)",
+          "hsl(220 20% 48%)",
+          "hsl(220 20% 59%)",
+          "hsl(220 20% 70%)",
+          "hsl(220 20% 82%)",
+          "hsl(220 20% 95%)"
+        ]
+      },
+      "slate-muted": {
+        "role": "neutral",
+        "displayName": "Slate Muted",
+        "canonical": "hsl(220 10% 45%)",
+        "hexApprox": "#676f7e",
+        "tonalRamp": [
+          "hsl(220 10% 15%)",
+          "hsl(220 10% 26%)",
+          "hsl(220 10% 37%)",
+          "hsl(220 10% 48%)",
+          "hsl(220 10% 59%)",
+          "hsl(220 10% 70%)",
+          "hsl(220 10% 82%)",
+          "hsl(220 10% 95%)"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "hsl(220 15% 90%)",
+        "hexApprox": "#e2e4e9",
+        "tonalRamp": [
+          "hsl(220 15% 15%)",
+          "hsl(220 15% 26%)",
+          "hsl(220 15% 37%)",
+          "hsl(220 15% 48%)",
+          "hsl(220 15% 59%)",
+          "hsl(220 15% 70%)",
+          "hsl(220 15% 82%)",
+          "hsl(220 15% 95%)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; 56px under 960px; one italic word allowed."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings; 40px under 960px. Footer CTA variant 64px/44px."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card titles."
+      },
+      "body-lead": {
+        "displayName": "Body Lead",
+        "purpose": "Hero subhead (max ~520px); 18px for section ledes."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Feature list copy in Slate Muted with bold Slate Ink lead-ins; 16px in cards."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase eyebrows in Spark Indigo Deep."
+      }
+    },
+    "shadows": [
+      {
+        "name": "resting-card",
+        "value": "0 4px 20px -4px rgba(0,0,0,0.05)",
+        "purpose": "How-it-works and pricing cards."
+      },
+      {
+        "name": "indigo-glow",
+        "value": "0 8px 24px -8px hsl(250 75% 55% / 0.25)",
+        "purpose": "Primary buttons and balance pill."
+      },
+      {
+        "name": "featured-glow",
+        "value": "0 16px 48px -16px hsl(250 75% 55% / 0.25)",
+        "purpose": "Recommended pricing card."
+      },
+      {
+        "name": "device-float",
+        "value": "0 32px 80px -24px rgba(45,30,100,0.28)",
+        "purpose": "Phone mockups."
+      },
+      {
+        "name": "desktop-float",
+        "value": "0 40px 80px -28px rgba(20,18,60,0.28)",
+        "purpose": "Desktop dashboard mockup."
+      },
+      {
+        "name": "chip-float",
+        "value": "0 8px 24px -8px rgba(0,0,0,0.18)",
+        "purpose": "Floating callout chips."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-soft",
+        "value": "cubic-bezier(0.25, 0.46, 0.45, 0.94)",
+        "purpose": "All 200ms hover/focus transitions."
+      },
+      {
+        "name": "duration-state",
+        "value": "200ms",
+        "purpose": "Color, border, shadow transitions."
+      },
+      {
+        "name": "float",
+        "value": "translateY(0 → -8px), 3–4.2s ease-in-out infinite",
+        "purpose": "Gentle bob on celebration chips; disabled under prefers-reduced-motion."
+      },
+      {
+        "name": "press",
+        "value": "scale(0.98)",
+        "purpose": "Button :active."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "single-column",
+        "value": "960px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one call-to-action style: Spark Indigo with an indigo glow.",
+      "html": "<button class=\"ds-btn-primary\">Start free</button>",
+      "css": ":host{--brand:250 75% 55%;--brand-dark:250 75% 35%;--brand-light:250 75% 95%;--success:156 100% 39%;--success-light:156 100% 96%;--text:220 20% 15%;--text-muted:220 10% 45%;--card-border:220 15% 90%;--ease-soft:cubic-bezier(0.25,0.46,0.45,0.94);} .ds-btn-primary{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:14px;border:0;font:600 15px/1 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;background:hsl(var(--brand));color:#fff;box-shadow:0 8px 24px -8px hsl(var(--brand) / 0.25);cursor:pointer;transition:all 200ms var(--ease-soft);} .ds-btn-primary:hover{background:hsl(var(--brand-dark));} .ds-btn-primary:focus-visible{outline:2px solid hsl(var(--brand));outline-offset:3px;} .ds-btn-primary:active{transform:scale(0.98);}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action on white with a hairline border; often carries a trailing arrow.",
+      "html": "<button class=\"ds-btn-ghost\">See how it works →</button>",
+      "css": ":host{--brand:250 75% 55%;--brand-dark:250 75% 35%;--brand-light:250 75% 95%;--success:156 100% 39%;--success-light:156 100% 96%;--text:220 20% 15%;--text-muted:220 10% 45%;--card-border:220 15% 90%;--ease-soft:cubic-bezier(0.25,0.46,0.45,0.94);} .ds-btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:14px;font:600 15px/1 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;background:#fff;color:hsl(var(--text));border:1.5px solid hsl(var(--card-border));cursor:pointer;transition:all 200ms var(--ease-soft);} .ds-btn-ghost:hover{border-color:hsl(var(--brand) / 0.5);color:hsl(var(--brand-dark));} .ds-btn-ghost:focus-visible{outline:2px solid hsl(var(--brand));outline-offset:3px;} .ds-btn-ghost:active{transform:scale(0.98);}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-cta",
+      "description": "Wordmark, centred text links, slate pill CTA.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-nav-mark\" href=\"#\"><svg width=\"28\" height=\"28\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"18\" fill=\"hsl(250 75% 55%)\"/><path d=\"M32 16 L35.5 25 L45 25.7 L37.7 31.5 L40 41 L32 36 L24 41 L26.3 31.5 L19 25.7 L28.5 25 Z\" fill=\"white\"/></svg>Sparkquest</a><div class=\"ds-nav-links\"><a href=\"#\">How it works</a><a href=\"#\">For kids</a><a href=\"#\">Pricing</a></div><a class=\"ds-nav-cta\" href=\"#\">Start free</a></nav>",
+      "css": ":host{--brand:250 75% 55%;--brand-dark:250 75% 35%;--brand-light:250 75% 95%;--success:156 100% 39%;--success-light:156 100% 96%;--text:220 20% 15%;--text-muted:220 10% 45%;--card-border:220 15% 90%;--ease-soft:cubic-bezier(0.25,0.46,0.45,0.94);} .ds-nav{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:16px 24px;font-family:Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;} .ds-nav a{text-decoration:none;color:hsl(var(--text));} .ds-nav-mark{display:flex;align-items:center;gap:10px;font:600 20px/1 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;letter-spacing:-0.01em;} .ds-nav-links{display:flex;gap:28px;font:500 15px/1 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;} .ds-nav-links a{transition:color 200ms var(--ease-soft);} .ds-nav-links a:hover{color:hsl(var(--brand-dark));} .ds-nav-cta{background:hsl(var(--text));color:#fff !important;padding:10px 18px;border-radius:9999px;font:600 14px/1 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;transition:background 200ms var(--ease-soft);} .ds-nav-cta:hover{background:hsl(var(--brand-dark));} .ds-nav a:focus-visible{outline:2px solid hsl(var(--brand));outline-offset:3px;border-radius:6px;}"
+    },
+    {
+      "name": "Email Input",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "White field, hairline border, indigo border plus soft halo on focus.",
+      "html": "<input class=\"ds-input\" type=\"email\" placeholder=\"you@home.com\" aria-label=\"Email address\">",
+      "css": ":host{--brand:250 75% 55%;--brand-dark:250 75% 35%;--brand-light:250 75% 95%;--success:156 100% 39%;--success-light:156 100% 96%;--text:220 20% 15%;--text-muted:220 10% 45%;--card-border:220 15% 90%;--ease-soft:cubic-bezier(0.25,0.46,0.45,0.94);} .ds-input{padding:14px 18px;border-radius:14px;border:1.5px solid hsl(var(--card-border));background:#fff;font:500 15px/1 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;color:hsl(var(--text));outline:none;min-width:260px;transition:border-color 200ms var(--ease-soft),box-shadow 200ms var(--ease-soft);} .ds-input:focus{border-color:hsl(var(--brand));box-shadow:0 0 0 4px hsl(var(--brand) / 0.1);}"
+    },
+    {
+      "name": "Chips",
+      "kind": "chip",
+      "refersTo": "points-pill",
+      "description": "Points pill, balance pill, and earned chip.",
+      "html": "<div class=\"ds-chips\"><span class=\"ds-pts\">+10</span><span class=\"ds-bal\">120<small>pts</small></span><span class=\"ds-earned\">+10 pts ✨</span><span class=\"ds-step\">01</span></div>",
+      "css": ":host{--brand:250 75% 55%;--brand-dark:250 75% 35%;--brand-light:250 75% 95%;--success:156 100% 39%;--success-light:156 100% 96%;--text:220 20% 15%;--text-muted:220 10% 45%;--card-border:220 15% 90%;--ease-soft:cubic-bezier(0.25,0.46,0.45,0.94);} .ds-chips{display:flex;gap:12px;align-items:center;font-family:Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;} .ds-pts{font:600 11px/1 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;color:hsl(var(--brand-dark));background:hsl(var(--brand-light));padding:5px 8px;border-radius:9999px;font-variant-numeric:tabular-nums;} .ds-bal{background:hsl(var(--brand));color:#fff;padding:7px 12px;border-radius:9999px;font:700 13px/1 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;font-variant-numeric:tabular-nums;box-shadow:0 8px 24px -8px hsl(var(--brand) / 0.25);} .ds-bal small{font-size:10px;opacity:.85;margin-left:3px;font-weight:500;} .ds-earned{padding:10px 16px;border-radius:9999px;font:600 14px/1 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;color:hsl(var(--success));background:hsl(var(--success-light));border:1px solid hsl(var(--success) / 0.2);box-shadow:0 8px 24px -8px rgba(0,0,0,.18);} .ds-step{font:700 14px/1 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;color:hsl(var(--brand-dark));background:hsl(var(--brand-light));padding:8px 12px;border-radius:9999px;letter-spacing:.04em;}"
+    },
+    {
+      "name": "Step Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "White 24px card on lavender paper with resting shadow.",
+      "html": "<div class=\"ds-card\"><span class=\"ds-card-num\">01</span><div class=\"ds-card-t\">Set the routine</div><p class=\"ds-card-d\">Add your kids, list daily tasks, and assign points.</p></div>",
+      "css": ":host{--brand:250 75% 55%;--brand-dark:250 75% 35%;--brand-light:250 75% 95%;--success:156 100% 39%;--success-light:156 100% 96%;--text:220 20% 15%;--text-muted:220 10% 45%;--card-border:220 15% 90%;--ease-soft:cubic-bezier(0.25,0.46,0.45,0.94);} .ds-card{background:#fff;border:1px solid hsl(var(--card-border));border-radius:24px;padding:32px;box-shadow:0 4px 20px -4px rgba(0,0,0,.05);max-width:340px;font-family:Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;} .ds-card-num{display:inline-block;font:700 14px/1 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;color:hsl(var(--brand-dark));background:hsl(var(--brand-light));padding:8px 12px;border-radius:9999px;letter-spacing:.04em;margin-bottom:20px;} .ds-card-t{font:500 24px/1.2 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;letter-spacing:-.01em;margin-bottom:10px;color:hsl(var(--text));} .ds-card-d{font:400 16px/1.5 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;color:hsl(var(--text-muted));margin:0;}"
+    },
+    {
+      "name": "Check List",
+      "kind": "custom",
+      "refersTo": "step-badge",
+      "description": "Signature feature list: indigo-mist check badges with bold lead-ins.",
+      "html": "<ul class=\"ds-ticks\"><li><b>No shaming.</b> Missed a day? Tomorrow is a new list.</li><li><b>30 seconds, max.</b> The whole check-in fits on one screen.</li></ul>",
+      "css": ":host{--brand:250 75% 55%;--brand-dark:250 75% 35%;--brand-light:250 75% 95%;--success:156 100% 39%;--success-light:156 100% 96%;--text:220 20% 15%;--text-muted:220 10% 45%;--card-border:220 15% 90%;--ease-soft:cubic-bezier(0.25,0.46,0.45,0.94);} .ds-ticks{list-style:none;margin:0;padding:0;display:grid;gap:16px;max-width:420px;} .ds-ticks li{position:relative;padding-left:32px;font:400 17px/1.55 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;color:hsl(var(--text-muted));} .ds-ticks b{color:hsl(var(--text));font-weight:600;} .ds-ticks li::before{content:'✓';position:absolute;left:0;top:2px;width:22px;height:22px;border-radius:50%;background:hsl(var(--brand-light));color:hsl(var(--brand-dark));display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;}"
+    },
+    {
+      "name": "Task Row",
+      "kind": "custom",
+      "refersTo": "points-pill",
+      "description": "Signature mockup row: open vs. done states.",
+      "html": "<div class=\"ds-tasks\"><div class=\"ds-t ds-done\"><span class=\"ds-cb\">✓</span><span class=\"ds-nm\">Brush teeth</span><span class=\"ds-pt\">+5</span></div><div class=\"ds-t\"><span class=\"ds-cb\"></span><span class=\"ds-nm\">Read for 20 min</span><span class=\"ds-pt\">+10</span></div></div>",
+      "css": ":host{--brand:250 75% 55%;--brand-dark:250 75% 35%;--brand-light:250 75% 95%;--success:156 100% 39%;--success-light:156 100% 96%;--text:220 20% 15%;--text-muted:220 10% 45%;--card-border:220 15% 90%;--ease-soft:cubic-bezier(0.25,0.46,0.45,0.94);} .ds-tasks{display:grid;gap:7px;max-width:290px;font-family:Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;} .ds-t{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid hsl(var(--card-border));border-radius:12px;background:#fff;} .ds-done{background:hsl(var(--success-light));border-color:hsl(var(--success) / .3);} .ds-cb{width:20px;height:20px;border-radius:6px;border:2px solid hsl(var(--card-border));display:inline-flex;align-items:center;justify-content:center;color:#fff;font:700 12px/1 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;} .ds-done .ds-cb{background:hsl(var(--success));border-color:hsl(var(--success));} .ds-nm{font:500 13px/1.2 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;flex:1;color:hsl(var(--text));} .ds-done .ds-nm{text-decoration:line-through;color:hsl(var(--text-muted));} .ds-pt{font:600 11px/1 Apercu, 'DM Sans', Inter, system-ui, -apple-system, sans-serif;color:hsl(var(--brand-dark));background:hsl(var(--brand-light));padding:5px 8px;border-radius:9999px;} .ds-done .ds-pt{color:hsl(var(--success));background:#fff;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Gold Star",
+    "overview": "**Creative North Star: \"The Quiet Gold Star\"**\n\nThink of the gold star on a fridge chart, grown up. Every reward in Sparkquest should feel earned and satisfying, and nothing in the system should shout. The interface is a calm, bright room: lavender-tinted paper, white cards with hairline edges, one confident indigo, and green that appears only where something has been done. Game mechanics such as points, progress and (soon) streaks are real and visible. They are presented the way a teacher hands back a starred worksheet, not the way a slot machine pays out.\n\nThe density is airy and unhurried. Sections breathe at 120px. Headlines are big and set in Apercu Medium rather than Bold, with tight tracking, so they read as confident but soft-spoken. The product is drawn honestly as UI mockups (phone checklist, parent dashboard) rather than as illustration or mascots. Atmosphere comes from blurred colour blooms behind the hero, never from decoration on the content itself.\n\nThe look is refined and gentle, aimed at the parent who buys the product while staying safe and legible for the 4-to-12-year-olds who use it. It must never resemble arcade or casino game UI (raining coins, flashing confetti, slot-machine reward loops) or loud edtech (saturated primaries, cartoon mascots, shouting badges).",
+    "keyCharacteristics": [
+      "One accent (Spark Indigo) carries every action and every reward; green only means \"done\"",
+      "Apercu throughout, medium weight for display, wide-tracked uppercase labels",
+      "Generous rounding everywhere, with no sharp corners",
+      "Soft, diffuse shadows, plus an indigo-tinted glow reserved for primary actions",
+      "Real product UI as the hero imagery; colour blooms as the only ambient decoration",
+      "Celebrations are small: one chip, one sparkle, a gentle float"
+    ],
+    "rules": [
+      {
+        "name": "The One Voice Rule",
+        "body": "Spark Indigo is the only colour that asks for action. Never use green, gold or another hue for a button.",
+        "section": "colors"
+      },
+      {
+        "name": "The Earned Green Rule",
+        "body": "Green appears only after something is done: a checked task, points received. It never decorates, and it doesn't own streaks or progress.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Pure White Page Rule",
+        "body": "The page is Lavender Paper. Card White is reserved for surfaces that sit on top of it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Medium Not Bold Rule",
+        "body": "Headlines are weight 500. Bold (600–700) is for labels, buttons, numbers and lead-in phrases, never for display type.",
+        "section": "typography"
+      },
+      {
+        "name": "The Bold Lead-In Rule",
+        "body": "Feature bullets open with a short bold phrase in Slate Ink, then continue in Slate Muted.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tinted Glow Rule",
+        "body": "Only Spark Indigo surfaces cast a coloured shadow. Everything else uses neutral or cool-dark shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep Spark Indigo as the only call-to-action colour, with Spark Indigo Deep on hover.",
+      "**Do** set headlines in Apercu weight 500 with −0.02em tracking, and keep bold for labels, numbers and lead-ins.",
+      "**Do** use Lavender Paper as the page background and Card White only for surfaces on top of it.",
+      "**Do** round everything: 14px controls, 24px cards, pills for badges and chips.",
+      "**Do** keep celebrations small and singular: one floating chip, one ✨, a gentle 8px float.",
+      "**Do** show real product UI as imagery rather than illustration.",
+      "**Do** honour `prefers-reduced-motion` by turning off all animations and transitions."
+    ],
+    "donts": [
+      "**Don't** put white or light text on Done Green. It measures about 2.2:1 and fails WCAG. Use Done Green Mist with darker green text, or keep green to icons and fills.",
+      "**Don't** use Done Green to decorate or to signal anything except completed and earned.",
+      "**Don't** let the system resemble arcade or casino game UI: no raining coins, flashing confetti or slot-machine reward loops.",
+      "**Don't** drift into loud edtech: no saturated primary rainbows, cartoon mascots or shouting badges.",
+      "**Don't** use sharp corners or pure-white page backgrounds.",
+      "**Don't** set display type in Bold."
+    ]
+  }
+}

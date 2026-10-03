@@ -1,0 +1,32 @@
+# The site is published from the repo root, so keep project tooling and
+# internal docs off the public site.
+
+[[redirects]]
+  from = "/.claude/*"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/.impeccable/*"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/PRODUCT.md"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/DESIGN.md"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/netlify.toml"
+  to = "/404"
+  status = 404
+  force = true
