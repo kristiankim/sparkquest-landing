@@ -36,6 +36,7 @@ Confirmed features:
 - A PIN-gated parent dashboard, so kids can't change their own point values
 
 Open decisions:
+- **Sparkquest is free during the beta.** The landing page shows a single free beta offer; the earlier plans section is kept in `index.html` but hidden.
 - **Pricing and plans are not decided.** The current page's $0 tier for one child, $4/month Family plan, 6-kid limit and 14-day trial are placeholders, not product facts.
 - **Calendar sync** is listed as "coming soon". Its status is not confirmed.
 - **The marketing copy contradicts the positioning.** The current page says "No streaks", "No streak shaming" and "never gamified". These lines predate the decision to gamify with streaks and need rewriting.
